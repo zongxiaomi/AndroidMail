@@ -1,1 +1,1 @@
-include 'mail'
+include 'app','mail'

@@ -26,5 +26,5 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 //    compile project(path: ':mail')
-//    compile 'com.github.zongxiaomi:AndroidMail:1.0'
+    compile 'com.github.zongxiaomi:AndroidMail:1.03'
 }
