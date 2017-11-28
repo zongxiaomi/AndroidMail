@@ -1,5 +1,5 @@
 # Android Mail 
-
+[！[哈哈]（https://jitpack.io/v/zongxiaomi/AndroidMail.svg）（https://jitpack.io/#zongxiaomi/AndroidMail）
 ### 前言
 Android前端一般都使用埋点或者听云第其他的云平台作为分析日志的工具，但是一些小量的日志或者数据可以用邮件去分析，因为Python、JAVA、PHP都有封装的类库去发送邮件，所以一般做法是调用网络接口让后台去发送邮件，其实Android中也可以发送邮件，其实整合的JAVA的类库。
 ## 使用方法
