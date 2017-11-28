@@ -85,7 +85,7 @@ compile 'com.github.zongxiaomi:AndroidMail:1.05'
 - 发送Html邮件
 
 ```java
-Mail mail = new Mail();
+        Mail mail = new Mail();
         mail.setMailServerHost(HOST);
         mail.setMailServerPort(PORT);
         mail.setValidate(true);
