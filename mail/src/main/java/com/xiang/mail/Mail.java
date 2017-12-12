@@ -18,6 +18,7 @@ public class Mail {
     private String[] attachFileNames;// 邮件附件的文件名
     private boolean debug = false;
     private Properties p;
+    private MailType currentMailType;
 
     /**
      * 获得邮件会话属性
@@ -30,7 +31,9 @@ public class Mail {
             p.put("mail.smtp.**ssl.enable", "true");
             p.put("mail.smtp.**ssl.required", "true");
             p.put("mail.smtp.auth", validate ? "true" : "false");
-            p.put("mail.smtp.starttls.enable", "true");// qq 需要，如果不加，会出现认证失败，163 不需要
+            if (currentMailType == MailType.QQ) {
+                p.put("mail.smtp.starttls.enable", "true");// qq 需要，如果不加，会出现认证失败，163 不需要
+            }
             p.put("mail.debug", debug ? "true" : "false");
         }
         return p;
@@ -44,6 +47,10 @@ public class Mail {
     public void setProperties(Properties p) {
         this.p = p;
 
+    }
+
+    public void setMailType(MailType currentMailType) {
+        this.currentMailType = currentMailType;
     }
 
     /**
